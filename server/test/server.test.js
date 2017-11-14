@@ -142,7 +142,7 @@ describe('DELETE /todos/:id', () =>{
 				if(err) {
 					return done(err);
 				}
-
+				
 				//querry db findById
 				Todo.findById(hexId).then((todo) => {
 					expect(todo).toExist();
